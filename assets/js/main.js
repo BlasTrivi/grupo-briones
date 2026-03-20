@@ -57,10 +57,47 @@ document.addEventListener('DOMContentLoaded', () => {
   const hamburger  = document.getElementById('hamburger');
   const mobileMenu = document.getElementById('mobileMenu');
 
+  const ensureMobileMenuSocial = () => {
+    if (!mobileMenu) return;
+    if (mobileMenu.querySelector('.mobile-menu-social')) return;
+
+    const socials = [
+      { label: 'Instagram', href: 'https://www.instagram.com/grupobriones/' },
+      { label: 'TikTok', href: 'https://www.tiktok.com/@grupobriones' },
+      { label: 'YouTube', href: 'https://www.youtube.com/@beltranbriones' },
+      { label: 'LinkedIn', href: 'https://www.linkedin.com/company/grupobriones/' },
+      { label: 'Facebook', href: 'https://www.facebook.com/profile.php?id=61582398871835' }
+    ];
+
+    const wrap = document.createElement('div');
+    wrap.className = 'mobile-menu-social';
+
+    const title = document.createElement('div');
+    title.className = 'mobile-menu-social-title';
+    title.textContent = 'Seguinos en redes';
+
+    const links = document.createElement('div');
+    links.className = 'mobile-menu-social-links';
+
+    socials.forEach(s => {
+      const a = document.createElement('a');
+      a.href = s.href;
+      a.target = '_blank';
+      a.rel = 'noopener noreferrer';
+      a.textContent = s.label;
+      links.appendChild(a);
+    });
+
+    wrap.appendChild(title);
+    wrap.appendChild(links);
+    mobileMenu.appendChild(wrap);
+  };
+
   window.toggleMenu = () => {
     const isOpen = mobileMenu.classList.toggle('open');
     hamburger.classList.toggle('open', isOpen);
     document.body.style.overflow = isOpen ? 'hidden' : '';
+    if (isOpen) ensureMobileMenuSocial();
   };
 
   window.closeMobileMenu = () => {
