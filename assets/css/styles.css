@@ -930,7 +930,7 @@ footer {
   .footer-col-title { margin-bottom: 1rem; }
 
   /* Mobile footer: mostrar solo Proyectos + Contacto */
-  .footer-grid  { grid-template-columns: 1fr; gap: 2.1rem; }
+  .footer-grid  { grid-template-columns: 1fr 1fr; gap: 2rem; }
   .footer-grid > div:first-child,
   .footer-grid > div:nth-child(2) { display: none; }
   .footer-links { gap: 0.6rem; }
@@ -975,6 +975,7 @@ footer {
 
   footer { padding: 2.6rem 5vw 1.8rem; }
   .footer-grid { gap: 1.9rem; }
+  .footer-grid { grid-template-columns: 1fr; }
   .footer-tagline {
     font-size: 0.8rem;
     display: -webkit-box;
