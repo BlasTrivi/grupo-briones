@@ -44,8 +44,10 @@ document.addEventListener('DOMContentLoaded', () => {
   // ── HEADER SCROLL ────────────────────────────────────────
   const header = document.getElementById('mainHeader');
   if (header) {
+    const socialFloat = document.querySelector('.social-float');
     const onScroll = () => {
       header.classList.toggle('scrolled', window.scrollY > 60);
+      if (socialFloat) socialFloat.classList.toggle('is-hidden', window.scrollY > 80);
     };
     window.addEventListener('scroll', onScroll, { passive: true });
     onScroll(); // run once on load

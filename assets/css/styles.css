@@ -748,11 +748,19 @@ section { padding: 7rem 8vw; }
   position: fixed;
   left: calc(1.35rem + env(safe-area-inset-left));
   top: 50%;
-  transform: translateY(-50%);
+  transform: translate(0, -50%);
+  opacity: 1;
+  transition: opacity var(--trans-fast), transform var(--trans-fast);
   display: none;
   flex-direction: column;
   gap: 0.7rem;
   z-index: 997;
+}
+
+.social-float.is-hidden {
+  opacity: 0;
+  pointer-events: none;
+  transform: translate(-12px, -50%);
 }
 
 body.is-home .social-float {
