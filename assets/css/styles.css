@@ -743,10 +743,14 @@ section { padding: 7rem 8vw; }
   left: 1.35rem;
   top: 50%;
   transform: translateY(-50%);
-  display: flex;
+  display: none;
   flex-direction: column;
   gap: 0.7rem;
   z-index: 997;
+}
+
+body.is-home .social-float {
+  display: flex;
 }
 .social-float-link {
   width: 44px;
@@ -894,8 +898,13 @@ footer {
   .blog-grid    { grid-template-columns: 1fr; }
   .search-grid  { grid-template-columns: 1fr; }
 
+  footer { padding: 3.5rem 6vw 2rem; }
+  .footer-grid { gap: 2.5rem; margin-bottom: 2.5rem; }
+  .footer-col-title { margin-bottom: 1rem; }
+
   .footer-grid  { grid-template-columns: 1fr; gap: 2.5rem; }
-  .footer-bottom { flex-direction: column; text-align: center; }
+  .footer-bottom { flex-direction: column; text-align: center; padding-top: 1.25rem; gap: 0.6rem; }
+  .footer-copy, .footer-by { line-height: 1.6; }
   .social-strip { flex-direction: column; text-align: center; justify-content: center; }
   .form-grid    { grid-template-columns: 1fr; }
 
@@ -911,4 +920,6 @@ footer {
   .amenities-grid { grid-template-columns: 1fr 1fr; }
   .why-badge { right: 0.5rem; bottom: -0.8rem; padding: 1.2rem; min-width: 120px; }
   .why-badge .big { font-size: 2.2rem; }
+
+  footer { padding: 3rem 5vw 1.8rem; }
 }
