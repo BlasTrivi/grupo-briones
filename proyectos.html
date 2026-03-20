@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Proyectos | Grupo Briones</title>
+  <meta name="description" content="Explorá los proyectos de Grupo Briones: desarrollos residenciales en Recoleta, Palermo y Saavedra." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <a href="https://wa.me/5491124682070" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menú mobile">
+    <a href="index.html#inicio" onclick="closeMobileMenu()">Inicio</a>
+    <a href="nosotros.html" onclick="closeMobileMenu()">Nosotros</a>
+    <a href="proyectos.html" onclick="closeMobileMenu()">Proyectos</a>
+    <a href="blog.html" onclick="closeMobileMenu()">Blog</a>
+    <a href="faqs.html" onclick="closeMobileMenu()">FAQs</a>
+    <a href="index.html#contact" onclick="closeMobileMenu()">Contacto</a>
+  </nav>
+
+  <header id="mainHeader" role="banner">
+    <div class="header-logo">
+      <a href="index.html#inicio" aria-label="Ir al inicio">
+        <img src="https://grupobriones.com.ar/_next/image?url=%2Fbranding%2Finline-logo-white.png&w=640&q=75" alt="Grupo Briones" width="160" height="34" />
+      </a>
+    </div>
+
+    <nav aria-label="Navegación principal">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="blog.html">Blog</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="prensa.html">Prensa</a>
+      <a href="index.html#contact" class="header-cta">Consultar</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero" aria-label="Proyectos">
+      <div class="page-hero-inner">
+        <div class="page-kicker">Desarrollos</div>
+        <h1 class="page-title">Proyectos en zonas <em>premium</em></h1>
+        <p class="page-subtitle">Unidades pensadas para vivir mejor y para invertir con proyección, en barrios de alta demanda.</p>
+        <div class="page-actions">
+          <a class="btn-primary" href="index.html#contact">Consultar disponibilidad</a>
+          <a class="btn-outline" href="nosotros.html">Conocer el equipo</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="projects-section" aria-labelledby="projects-heading">
+      <div class="projects-header">
+        <div>
+          <div class="section-tag reveal"><span>Nuestros Proyectos</span></div>
+          <h2 id="projects-heading" class="section-title reveal reveal-d1">Desarrollos que definen el<br><em>futuro de Buenos Aires</em></h2>
+        </div>
+        <a href="index.html#contact" class="link-more reveal reveal-d2">Quiero asesoramiento</a>
+      </div>
+
+      <div class="projects-grid">
+        <a href="proyectos/brigos-recoleta.html" class="project-card reveal" aria-label="Ver proyecto Brigos Recoleta">
+          <img src="https://images.ctfassets.net/384t5rgvotiw/75FZD0MVLYo1oTR1czbWaC/01404c7892fa045b91e9e2a444a3dd87/WhatsApp_Image_2025-12-18_at_16.08.40__1_.jpeg?fm=webp&q=80&w=900"
+               alt="Brigos Recoleta — departamentos en Larrea 838, Recoleta, Buenos Aires" loading="lazy" width="900" height="1200" />
+          <div class="project-card-overlay" aria-hidden="true"></div>
+          <div class="project-card-info">
+            <span class="project-badge">En construcción</span>
+            <h3 class="project-name">Brigos<br>Recoleta</h3>
+            <p class="project-desc">13 pisos · 1 a 3 ambientes · Larrea 838, Recoleta</p>
+            <span class="project-cta">Ver proyecto</span>
+          </div>
+        </a>
+
+        <a href="proyectos/cordoba.html" class="project-card reveal reveal-d1" aria-label="Ver proyecto Brigos Palermo">
+          <img src="https://images.ctfassets.net/384t5rgvotiw/64AVCncUotB2lsf9LPptoE/2cf25d99ab3af7ff9a64c53638b53b16/WhatsApp_Image_2025-11-20_at_15.26.21__1_.jpeg?fm=webp&q=80&w=900"
+               alt="Brigos Palermo — departamentos en Av. Córdoba 4309, Palermo, Buenos Aires" loading="lazy" width="900" height="1200" />
+          <div class="project-card-overlay" aria-hidden="true"></div>
+          <div class="project-card-info">
+            <span class="project-badge">En construcción</span>
+            <h3 class="project-name">Brigos<br>Palermo</h3>
+            <p class="project-desc">13 pisos · 1 a 3 ambientes · Av. Córdoba 4309, Palermo</p>
+            <span class="project-cta">Ver proyecto</span>
+          </div>
+        </a>
+
+        <a href="proyectos/casa-huidobro.html" class="project-card reveal reveal-d2" aria-label="Ver proyecto Casa Huidobro">
+          <img src="https://images.ctfassets.net/384t5rgvotiw/1WcoyvAJg3UL92TGDsL9tr/6b160a4ffdbcf6108d6348e4624ad39a/WhatsApp_Image_2025-11-20_at_11.51.22.jpg?fm=webp&q=80&w=900"
+               alt="Casa Huidobro — departamentos en Saavedra, Buenos Aires" loading="lazy" width="900" height="1200" />
+          <div class="project-card-overlay" aria-hidden="true"></div>
+          <div class="project-card-info">
+            <span class="project-badge">En construcción</span>
+            <h3 class="project-name">Casa<br>Huidobro</h3>
+            <p class="project-desc">7 pisos · 1 a 4 ambientes · Saavedra</p>
+            <span class="project-cta">Ver proyecto</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <section class="amenities-section" aria-labelledby="amenities-heading">
+      <div class="section-tag reveal"><span>Cada Detalle Importa</span></div>
+      <h2 id="amenities-heading" class="section-title reveal reveal-d1">Amenities de<br><em>primer nivel</em></h2>
+      <div class="amenities-grid">
+        <div class="amenity-card reveal">
+          <img src="https://images.ctfassets.net/384t5rgvotiw/6mjK5y9whqEmkYOyoxBBf2/5b1cd11437a0fa543d99af8812dffa53/527730662.jpg?fm=webp&q=75&w=700" alt="Balcones amplios" loading="lazy" />
+          <div class="amenity-label">Balcones amplios</div>
+        </div>
+        <div class="amenity-card reveal reveal-d1">
+          <img src="https://images.ctfassets.net/384t5rgvotiw/2YVPJIvPbLNMdT6sDgFypO/5466de295068924723f72a84ebcb6ed6/beneficios-gimnasio-edificio-liven.webp?fm=webp&q=75&w=700" alt="Gimnasio" loading="lazy" />
+          <div class="amenity-label">Gimnasio</div>
+        </div>
+        <div class="amenity-card reveal reveal-d2">
+          <img src="https://images.ctfassets.net/384t5rgvotiw/2cdLsGwkGCuKIbSau5Hoor/39ecebc1927a0582345bd83edaa1a064/1924789365.jpg?fm=webp&q=75&w=700" alt="Solarium" loading="lazy" />
+          <div class="amenity-label">Solarium</div>
+        </div>
+        <div class="amenity-card reveal reveal-d3">
+          <img src="https://images.ctfassets.net/384t5rgvotiw/3KSVVzuCdrQjWZrOG8u4yQ/ed2625475104f989c748f4298a404a36/IWAK4HQ2URDFHDSWOLUPRXS6PY__1_.jpg?fm=webp&q=75&w=700" alt="Pileta" loading="lazy" />
+          <div class="amenity-label">Pileta</div>
+        </div>
+      </div>
+    </section>
+
+    <div class="search-section" aria-label="Consulta">
+      <div class="search-grid">
+        <div class="filter-group">
+          <label>¿Qué tipo de departamento buscás?</label>
+          <div class="filter-pills" data-group="amb">
+            <button class="pill active" onclick="filterPill(this,'amb')">1 ambiente</button>
+            <button class="pill" onclick="filterPill(this,'amb')">2 ambientes</button>
+            <button class="pill" onclick="filterPill(this,'amb')">3 ambientes</button>
+            <button class="pill" onclick="filterPill(this,'amb')">4 ambientes</button>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>¿Cuál es tu zona de preferencia?</label>
+          <div class="filter-pills" data-group="zona">
+            <button class="pill" onclick="filterPill(this,'zona')">Núñez</button>
+            <button class="pill active" onclick="filterPill(this,'zona')">Saavedra</button>
+            <button class="pill" onclick="filterPill(this,'zona')">Palermo</button>
+            <button class="pill" onclick="filterPill(this,'zona')">Recoleta</button>
+          </div>
+        </div>
+        <a href="index.html#contact" class="btn-primary">Quiero más información</a>
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://grupobriones.com.ar/_next/image?url=%2Fbranding%2Finline-logo-white.png&w=640&q=75" alt="Grupo Briones" width="140" height="30" />
+        </div>
+        <p class="footer-tagline">Desarrollos inmobiliarios de calidad en la Ciudad de Buenos Aires. Construimos el futuro de la ciudad.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegación</div>
+        <nav class="footer-links" aria-label="Footer navegación">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="blog.html">Blog</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="eventos.html">Eventos</a>
+          <a href="prensa.html">Prensa</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer-col-title">Proyectos</div>
+        <nav class="footer-links" aria-label="Footer proyectos">
+          <a href="proyectos/brigos-recoleta.html">Brigos | Recoleta</a>
+          <a href="proyectos/cordoba.html">Brigos | Palermo</a>
+          <a href="proyectos/casa-huidobro.html">Casa Huidobro</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-links">
+          <a href="https://www.google.com/maps/search/Cerrito+1186,+CABA" target="_blank" rel="noopener">Cerrito 1186, CABA</a>
+          <a href="https://wa.me/5491124682070">+54 9 11 2468-2070</a>
+          <a href="mailto:contacto@grupobriones.com.ar">contacto@grupobriones.com.ar</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Grupo Briones — Todos los derechos reservados.</span>
+      <span class="footer-by">Desarrollos inmobiliarios en CABA, Argentina.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>

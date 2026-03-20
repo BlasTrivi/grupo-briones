@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nosotros | Grupo Briones</title>
+  <meta name="description" content="Conocé Grupo Briones: desarrollos inmobiliarios premium en Buenos Aires, con foco en entrega, calidad y ubicaciones estratégicas." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body>
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <a href="https://wa.me/5491124682070" class="whatsapp-float" target="_blank" rel="noopener noreferrer" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Menú mobile">
+    <a href="index.html#inicio" onclick="closeMobileMenu()">Inicio</a>
+    <a href="nosotros.html" onclick="closeMobileMenu()">Nosotros</a>
+    <a href="proyectos.html" onclick="closeMobileMenu()">Proyectos</a>
+    <a href="blog.html" onclick="closeMobileMenu()">Blog</a>
+    <a href="faqs.html" onclick="closeMobileMenu()">FAQs</a>
+    <a href="index.html#contact" onclick="closeMobileMenu()">Contacto</a>
+  </nav>
+
+  <header id="mainHeader" role="banner">
+    <div class="header-logo">
+      <a href="index.html#inicio" aria-label="Ir al inicio">
+        <img src="https://grupobriones.com.ar/_next/image?url=%2Fbranding%2Finline-logo-white.png&w=640&q=75" alt="Grupo Briones" width="160" height="34" />
+      </a>
+    </div>
+
+    <nav aria-label="Navegación principal">
+      <a href="index.html#inicio">Inicio</a>
+      <a href="nosotros.html">Nosotros</a>
+      <a href="proyectos.html">Proyectos</a>
+      <a href="blog.html">Blog</a>
+      <a href="faqs.html">FAQs</a>
+      <a href="eventos.html">Eventos</a>
+      <a href="prensa.html">Prensa</a>
+      <a href="index.html#contact" class="header-cta">Consultar</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero" aria-label="Nosotros">
+      <div class="page-hero-inner">
+        <div class="page-kicker">Grupo Briones</div>
+        <h1 class="page-title">Somos un equipo que construye <em>confianza</em></h1>
+        <p class="page-subtitle">Desarrollamos proyectos residenciales en Buenos Aires con foco en calidad constructiva, ubicaciones premium y cumplimiento de plazos.</p>
+        <div class="page-actions">
+          <a class="btn-primary" href="proyectos.html">Ver proyectos</a>
+          <a class="btn-outline" href="index.html#contact">Hacer una consulta</a>
+        </div>
+      </div>
+    </section>
+
+    <div class="why-section" aria-labelledby="why-us-heading">
+      <div class="why-image reveal">
+        <img src="https://images.ctfassets.net/384t5rgvotiw/75FZD0MVLYo1oTR1czbWaC/01404c7892fa045b91e9e2a444a3dd87/WhatsApp_Image_2025-12-18_at_16.08.40__1_.jpeg?fm=webp&q=80&w=1100" alt="Obra y calidad constructiva" loading="lazy" />
+        <div class="why-badge" aria-hidden="true">
+          <span class="big">10+</span>
+          <span class="small">Años de<br>trayectoria</span>
+        </div>
+      </div>
+
+      <div class="why-content reveal reveal-d1">
+        <div class="section-tag"><span>Nosotros</span></div>
+        <h2 id="why-us-heading" class="section-title">Una forma clara de invertir en <em>real estate</em></h2>
+
+        <div class="content-prose">
+          <p>Trabajamos para que invertir en pozo sea una experiencia transparente: acompañamos el proceso, priorizamos la comunicación y cuidamos los detalles desde el diseño hasta la entrega.</p>
+          <p>Elegimos barrios con demanda sostenida y potencial de valorización, con proyectos pensados para vivir mejor y para invertir con objetivos concretos.</p>
+        </div>
+
+        <div class="why-features">
+          <div class="why-feature">
+            <div class="feature-num">01</div>
+            <div>
+              <div class="feature-title">Compromiso de entrega</div>
+              <div class="feature-desc">Planificación, seguimiento y ejecución con foco en cumplir lo acordado.</div>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="feature-num">02</div>
+            <div>
+              <div class="feature-title">Calidad en cada material</div>
+              <div class="feature-desc">Terminaciones y especificaciones alineadas a un estándar premium.</div>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="feature-num">03</div>
+            <div>
+              <div class="feature-title">Ubicaciones estratégicas</div>
+              <div class="feature-desc">Recoleta, Palermo, Saavedra y Núñez como ejes de selección.</div>
+            </div>
+          </div>
+          <div class="why-feature">
+            <div class="feature-num">04</div>
+            <div>
+              <div class="feature-title">Asesoramiento simple</div>
+              <div class="feature-desc">Un equipo preparado para ayudarte a decidir según tu objetivo de inversión.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="search-section" aria-label="Consulta">
+      <div class="search-grid">
+        <div class="filter-group">
+          <label>¿Querés recibir información?</label>
+          <div class="content-prose">
+            <p>Contanos qué tipo de unidad buscás y te respondemos con disponibilidad y opciones.</p>
+          </div>
+        </div>
+        <div class="filter-group">
+          <label>Respuesta rápida</label>
+          <div class="filter-pills" data-group="contacto-rapido">
+            <button class="pill active" onclick="filterPill(this,'contacto-rapido')">WhatsApp</button>
+            <button class="pill" onclick="filterPill(this,'contacto-rapido')">Email</button>
+          </div>
+        </div>
+        <a href="index.html#contact" class="btn-primary">Quiero más información</a>
+      </div>
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <div>
+        <div class="footer-logo">
+          <img src="https://grupobriones.com.ar/_next/image?url=%2Fbranding%2Finline-logo-white.png&w=640&q=75" alt="Grupo Briones" width="140" height="30" />
+        </div>
+        <p class="footer-tagline">Desarrollos inmobiliarios de calidad en la Ciudad de Buenos Aires. Construimos el futuro de la ciudad.</p>
+      </div>
+      <div>
+        <div class="footer-col-title">Navegación</div>
+        <nav class="footer-links" aria-label="Footer navegación">
+          <a href="index.html#inicio">Inicio</a>
+          <a href="nosotros.html">Nosotros</a>
+          <a href="proyectos.html">Proyectos</a>
+          <a href="blog.html">Blog</a>
+          <a href="faqs.html">FAQs</a>
+          <a href="eventos.html">Eventos</a>
+          <a href="prensa.html">Prensa</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer-col-title">Proyectos</div>
+        <nav class="footer-links" aria-label="Footer proyectos">
+          <a href="proyectos/brigos-recoleta.html">Brigos | Recoleta</a>
+          <a href="proyectos/cordoba.html">Brigos | Palermo</a>
+          <a href="proyectos/casa-huidobro.html">Casa Huidobro</a>
+        </nav>
+      </div>
+      <div>
+        <div class="footer-col-title">Contacto</div>
+        <div class="footer-links">
+          <a href="https://www.google.com/maps/search/Cerrito+1186,+CABA" target="_blank" rel="noopener">Cerrito 1186, CABA</a>
+          <a href="https://wa.me/5491124682070">+54 9 11 2468-2070</a>
+          <a href="mailto:contacto@grupobriones.com.ar">contacto@grupobriones.com.ar</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="footer-copy">© 2026 Grupo Briones — Todos los derechos reservados.</span>
+      <span class="footer-by">Desarrollos inmobiliarios en CABA, Argentina.</span>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js" defer></script>
+</body>
+</html>
