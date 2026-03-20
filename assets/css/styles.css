@@ -766,6 +766,12 @@ section { padding: 7rem 8vw; }
 body.is-home .social-float {
   display: flex;
 }
+
+@media (hover: none), (pointer: coarse) {
+  body.is-home .social-float {
+    display: none !important;
+  }
+}
 .social-float-link {
   width: 44px;
   height: 44px;
